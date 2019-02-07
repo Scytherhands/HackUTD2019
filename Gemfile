@@ -5,6 +5,8 @@ ruby '2.4.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
+#boot strap??
+gem 'bootstrap-sass', '3.3.7'
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
 # Use Puma as the app server
@@ -15,6 +17,13 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
+#
+# I got an error and it said to do this
+# SiteLayoutTest#test_layout_links:
+# NoMethodError: assert_template has been extracted to a gem. To continue using it,
+#         add `gem 'rails-controller-testing'` to your Gemfile.
+#     test/integration/site_layout_test.rb:7:in `block in <class:SiteLayoutTest>'
+gem 'rails-controller-testing'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
